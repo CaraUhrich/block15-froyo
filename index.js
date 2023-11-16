@@ -21,7 +21,6 @@ function createArray(str) {
 
   outputArray.push(currentFlavor);
 
-//   console.log(outputArray);
   return outputArray
 }
 
@@ -37,8 +36,7 @@ function createOrderObj(array) {
     } else order[currentFlavor] = 1;
   }
 
-  console.log(order);
   return order
 }
 
-createOrderObj(createArray(userInputString))
+console.log(createOrderObj(createArray(userInputString)))
