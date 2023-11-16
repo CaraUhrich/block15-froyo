@@ -21,7 +21,7 @@ function createArray(str) {
 
   outputArray.push(currentFlavor);
 
-  console.log(outputArray);
+//   console.log(outputArray);
   return outputArray
 }
 
