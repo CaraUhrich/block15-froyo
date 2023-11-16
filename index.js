@@ -21,22 +21,24 @@ function createArray(str) {
 
   outputArray.push(currentFlavor);
 
-  return outputArray
+  return outputArray;
 }
 
 function createOrderObj(array) {
   const order = {};
-  let currentFlavor = ''
+  let currentFlavor = "";
 
   for (let i = 0; i < array.length; i++) {
     currentFlavor = array[i];
 
     if (order[currentFlavor]) {
-    order[currentFlavor]++;
-    } else order[currentFlavor] = 1;
+      order[currentFlavor]++;
+    } else {
+      order[currentFlavor] = 1;
+    }
   }
 
-  return order
+  return order;
 }
 
-console.log(createOrderObj(createArray(userInputString)))
+console.log(createOrderObj(createArray(userInputString)));
